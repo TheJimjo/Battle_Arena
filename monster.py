@@ -1,6 +1,7 @@
 class Monster:
-    def __init__(self, name="nobody", hp=0, dr=0, damage=0, gold=0):
+    def __init__(self, name="nobody", maxhp=0, hp=0, dr=0, damage=0, gold=0):
         self.name = name
+        self.maxhp = maxhp
         self.hp = hp
         self.dr = dr
         self.damage = damage
@@ -13,6 +14,8 @@ class Monster:
     def monster_selection(self):
         pass  # This may not need to be a method in the monster class. Want monsters to be generated as select, not
 # not pre-generated.
+
+
 
 
 kobold = Monster("kobold", 10, 0, 2, 10)
